@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bavya Sri — BCA Student &amp; AI Enthusiast</title>
+<meta name="description" content="Portfolio of Bavya Sri, a first-year BCA student at Don Bosco College, Dharmapuri, learning programming, web development, and Artificial Intelligence.">
+
+<!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (code/labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient neural-network canvas background, drawn behind everything -->
+<canvas id="net-bg" aria-hidden="true"></canvas>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">Bavya<span class="dot">.</span>Sri</a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#ai-vision">AI Vision</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow">&lt;hello_world/&gt;</p>
+        <h1>Hi, I'm Bavya Sri <span class="wave">👋</span></h1>
+        <h2 class="typing" id="typing-target"></h2>
+        <p class="hero-desc">
+          I'm a first-year BCA student at Don Bosco College, Dharmapuri, passionate about
+          programming, web development, and Artificial Intelligence. I enjoy learning new
+          technologies and turning my ideas into creative projects.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <!-- Code-editor style panel: a signature element grounded in real content -->
+        <div class="code-panel">
+          <div class="code-panel-head">
+            <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+            <span class="code-panel-title">bavya.js</span>
+          </div>
+          <pre class="code-panel-body"><code><span class="c-key">const</span> <span class="c-var">bavya</span> = {
+  <span class="c-prop">role</span>: <span class="c-str">"BCA Student"</span>,
+  <span class="c-prop">status</span>: <span class="c-str">"learning"</span>,
+  <span class="c-prop">interests</span>: [
+    <span class="c-str">"AI"</span>, <span class="c-str">"Web Dev"</span>, <span class="c-str">"Software"</span>
+  ],
+  <span class="c-prop">goal</span>: <span class="c-str">"build useful AI apps"</span>,
+};
+
+<span class="c-com">// always learning, always growing 🚀</span></code></pre>
+        </div>
+        <div class="profile-orb">
+          <img src="images/profile.jpg" alt="Portrait of Bavya Sri">
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-hidden="true"><span></span></a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="eyebrow reveal">01 · about</p>
+      <h2 class="section-title reveal">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            Bavya Sri is a first-year Bachelor of Computer Applications student at Don Bosco
+            College, Dharmapuri. She has completed HDCA and is developing her programming and
+            web development skills through continuous practice and personal projects.
+          </p>
+          <p>
+            She's currently getting comfortable with <strong>C, C++, Python, Java, HTML, CSS,
+            and JavaScript</strong> — building small projects along the way to learn by doing.
+          </p>
+          <p>
+            I am particularly interested in Artificial Intelligence and hope to build
+            AI-powered applications and useful technologies in the future.
+          </p>
+        </div>
+
+        <div class="profile-card glass reveal">
+          <div class="profile-card-row"><span>Name</span><strong>Bavya Sri</strong></div>
+          <div class="profile-card-row"><span>Education</span><strong>BCA — 1st Year</strong></div>
+          <div class="profile-card-row"><span>College</span><strong>Don Bosco College, Dharmapuri</strong></div>
+          <div class="profile-card-row"><span>Special Interest</span><strong>Artificial Intelligence</strong></div>
+          <div class="profile-card-row"><span>Learning</span><strong>Programming &amp; Web Development</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <p class="eyebrow reveal">02 · education</p>
+      <h2 class="section-title reveal">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass">
+            <span class="tag">Present</span>
+            <h3>BCA — Bachelor of Computer Applications</h3>
+            <p class="timeline-meta">Don Bosco College, Dharmapuri · 1st Year</p>
+            <p>Currently developing knowledge in programming, computer applications, web
+              technologies, and software development.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass">
+            <span class="tag">Completed</span>
+            <h3>HDCA — Higher Diploma in Computer Applications</h3>
+            <p>Completed HDCA training and developed foundational computer application and
+              programming skills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow reveal">03 · skills</p>
+      <h2 class="section-title reveal">Skills</h2>
+
+      <h3 class="subgroup-title reveal">Programming Languages</h3>
+      <div class="skills-grid">
+        <div class="skill-card glass reveal">
+          <span class="skill-icon">C</span>
+          <h4>C</h4>
+          <p>Learning the fundamentals of structured programming.</p>
+          <span class="skill-pill learning">Learning</span>
+        </div>
+        <div class="skill-card glass reveal">
+          <span class="skill-icon">C++</span>
+          <h4>C++</h4>
+          <p>Practicing OOP concepts and problem solving.</p>
+          <span class="skill-pill learning">Learning</span>
+        </div>
+        <div class="skill-card glass reveal">
+          <span class="skill-icon">Py</span>
+          <h4>Python</h4>
+          <p>Exploring Python as a stepping stone toward AI.</p>
+          <span class="skill-pill learning">Learning</span>
+        </div>
+        <div class="skill-card glass reveal">
+          <span class="skill-icon">Jv</span>
+          <h4>Java</h4>
+          <p>Building a base in core Java concepts.</p>
+          <span class="skill-pill learning">Learning</span>
+        </div>
+      </div>
+
+      <h3 class="subgroup-title reveal">Web Development</h3>
+      <div class="skills-grid">
+        <div class="skill-card glass reveal">
+          <span class="skill-icon">&lt;/&gt;</span>
+          <h4>HTML</h4>
+          <p>Comfortable structuring pages with semantic markup.</p>
+          <span class="skill-pill strong">Strong Foundation</span>
+        </div>
+        <div class="skill-card glass reveal">
+          <span class="skill-icon">#</span>
+          <h4>CSS</h4>
+          <p>Confident styling layouts, responsiveness, and animation.</p>
+          <span class="skill-pill strong">Strong Foundation</span>
+        </div>
+        <div class="skill-card glass reveal">
+          <span class="skill-icon">JS</span>
+          <h4>JavaScript</h4>
+          <p>Currently learning and using it to power project interactions.</p>
+          <span class="skill-pill building">Building Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow reveal">04 · projects</p>
+      <h2 class="section-title reveal">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card glass reveal">
+          <div class="project-thumb" aria-hidden="true">
+            <span>🎮</span>
+          </div>
+          <div class="project-body">
+            <span class="tag mono">HTML · CSS · JavaScript</span>
+            <h3>Kids Learning Game</h3>
+            <p>A fun and interactive browser-based game designed for kids. The project focuses
+              on creating an easy-to-use interface and engaging gameplay.</p>
+            <ul class="feature-list">
+              <li>Interactive interface</li>
+              <li>Kid-friendly design</li>
+              <li>JavaScript interactions</li>
+              <li>Browser-based gameplay</li>
+            </ul>
+            <button class="btn btn-disabled" disabled title="Link coming soon">View Project — Link Coming Soon</button>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-thumb" aria-hidden="true">
+            <span>🧩</span>
+          </div>
+          <div class="project-body">
+            <span class="tag mono">HTML · CSS · JavaScript</span>
+            <h3>Kids Game</h3>
+            <p>An experimental kids game project created to practice JavaScript logic, user
+              interaction, animations, and web design.</p>
+            <ul class="feature-list">
+              <li>Interactive gameplay</li>
+              <li>JavaScript logic</li>
+              <li>Simple animations</li>
+              <li>Responsive design</li>
+            </ul>
+            <button class="btn btn-disabled" disabled title="Link coming soon">View Project — Link Coming Soon</button>
+          </div>
+        </article>
+      </div>
+
+      <p class="why-build reveal">
+        I believe the best way to learn technology is by building. My projects help me
+        understand programming concepts, experiment with ideas, improve my problem-solving
+        skills, and turn what I learn into something interactive.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ AI VISION ============ -->
+  <section class="section section-ai" id="ai-vision">
+    <div class="section-inner">
+      <p class="eyebrow reveal">05 · ai vision</p>
+      <h2 class="section-title reveal">My AI Vision 🤖</h2>
+      <p class="ai-copy reveal">
+        Artificial Intelligence is one of the technologies I am most interested in exploring.
+        My goal is to continue learning programming and AI concepts and eventually create
+        useful AI-powered applications that can solve real-world problems.
+      </p>
+
+      <ol class="roadmap">
+        <li class="roadmap-step reveal">
+          <span class="roadmap-index">01</span>
+          <span class="roadmap-label">Strengthen Programming Fundamentals</span>
+        </li>
+        <li class="roadmap-step reveal">
+          <span class="roadmap-index">02</span>
+          <span class="roadmap-label">Learn Advanced Python</span>
+        </li>
+        <li class="roadmap-step reveal">
+          <span class="roadmap-index">03</span>
+          <span class="roadmap-label">Learn AI &amp; Machine Learning</span>
+        </li>
+        <li class="roadmap-step reveal">
+          <span class="roadmap-index">04</span>
+          <span class="roadmap-label">Build AI Projects</span>
+        </li>
+        <li class="roadmap-step reveal">
+          <span class="roadmap-index">05</span>
+          <span class="roadmap-label">Create Useful AI Applications</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ LEARNING JOURNEY ============ -->
+  <section class="section" id="journey">
+    <div class="section-inner">
+      <p class="eyebrow reveal">06 · learning journey</p>
+      <h2 class="section-title reveal">My Learning Journey</h2>
+
+      <div class="journey-grid">
+        <div class="journey-card glass reveal">
+          <h4>Programming</h4>
+          <p class="journey-path">C <span>→</span> C++ <span>→</span> Python <span>→</span> Java</p>
+        </div>
+        <div class="journey-card glass reveal">
+          <h4>Web Development</h4>
+          <p class="journey-path">HTML <span>→</span> CSS <span>→</span> JavaScript</p>
+        </div>
+        <div class="journey-card glass reveal">
+          <h4>Future Learning</h4>
+          <p class="journey-path">Python Advanced <span>→</span> AI <span>→</span> ML <span>→</span> AI Projects</p>
+        </div>
+      </div>
+
+      <p class="growing-line reveal">
+        "I believe learning never stops. Every day, I explore new technologies, improve my
+        existing skills, and learn something new through practice and projects. I am
+        continuously expanding my knowledge in programming, web development, and Artificial
+        Intelligence, with the goal of becoming a skilled developer and building meaningful
+        technology in the future."
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <p class="eyebrow reveal">07 · contact</p>
+      <h2 class="section-title reveal">Let's Connect</h2>
+      <p class="contact-desc reveal">
+        I'm always interested in learning, exploring new technologies, and connecting with
+        people who enjoy building creative things with technology.
+      </p>
+
+      <div class="contact-grid">
+        <a href="#" class="contact-card glass reveal" data-placeholder="true">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">Add Email Address</span>
+        </a>
+        <a href="#" class="contact-card glass reveal" data-placeholder="true">
+          <span class="contact-icon">🐙</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">Add GitHub Link</span>
+        </a>
+        <a href="#" class="contact-card glass reveal" data-placeholder="true">
+          <span class="contact-icon">💼</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Add LinkedIn Link</span>
+        </a>
+        <a href="#" class="contact-card glass reveal" data-placeholder="true">
+          <span class="contact-icon">📷</span>
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">Add Instagram Link</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <p class="footer-name">Bavya Sri</p>
+  <p class="footer-role">BCA Student | AI Enthusiast | Web Developer</p>
+  <p class="footer-copy">&copy; <span id="year"></span> Bavya Sri. Always learning, always growing 🚀</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
